@@ -1,0 +1,41 @@
+.main{
+    height: 700px;
+    width: auto;
+    border: 1px solid black;
+    display: grid;
+    color: #000;
+    text-align: center;
+    grid-template-rows: 100px 270px 110px 110px 110px;
+    grid-template-columns: 300px 1fr 1fr;
+}
+.main .item{
+    border: 1px solid red;
+}
+.main .i-1{
+    background-color: aqua;
+    grid-area: 1/ 1/ 2/ 2;
+}
+.main .i-2{
+    background-color: aquamarine;
+    grid-area: 1/ 2/ 2/ 4;
+}
+.main .i-3{
+    background-color: blueviolet;
+    grid-area: 2/ 1/ 3/ 4;
+}
+.main .i-4{
+    background-color: brown;
+    grid-area: 3/ 1/ 5/ 2;
+}
+.main .i-5{
+    background: rgb(59, 164, 164);
+    grid-area: 5/ 1/ 6/ 4;
+}
+.main .i-6{
+    background: cyan;
+    grid-area: 4/ 3/ 5/ 4;
+}
+.main .i-7{
+    background: yellow;
+    grid-area: 3/ 3/ 4/ 4;
+}
