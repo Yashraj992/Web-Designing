@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop</title>
+    <style>
+        .main{
+            height: auto;
+            width: auto;
+            border: 1px solid black;
+            display: grid;
+            color: #fff;
+            grid-template-rows: 50px 180px 80px 80px 80px;
+            grid-template-columns: 300px 1fr 1fr;
+            text-align: center;
+        }
+        .h1{
+            text-align: center;
+        }
+        .main .item{
+            border: 1px solid red;
+        }
+        .main .i-1{
+            background: rgb(6, 6, 101);
+            grid-area: 1/ 1/ 2/ 2;
+        }
+        .main .i-2{
+            background: rgb(137, 29, 29);
+            grid-area: 1/ 2/ 2/ 4;
+        }
+        .main .i-3{
+            background: cyan;
+            grid-area: 2/ 1/ 3/ 4;
+        }
+        .main .i-4{
+            background: navy;
+            grid-area: 3/ 1/ 5/ 2;
+        }
+        .main .i-5{
+            background: rgb(59, 164, 164);
+            grid-area: 5/ 1/ 6/ 4;
+        }
+        .main .i-6{
+            background: cyan;
+            grid-area: 4/ 3/ 5/ 4;
+        }
+        .main .i-7{
+            background: yellow;
+            grid-area: 3/ 3/ 4/ 4;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1">DESKTOP</h1>
+    <div class="main">
+        <div class="item i-1">HEADER</div>
+        <div class="item i-2">MENU</div>
+        <div class="item i-3">HERO</div>
+        <div class="item i-4">MAIN</div>
+        <div class="item i-5">IMAGE</div>
+        <div class="item i-6">EXTRA</div>
+        <div class="item i-7">BANNER</div>
+    </div>
+</body>
+</html>

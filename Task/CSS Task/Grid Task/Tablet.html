@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablet</title>
+    <style>
+        .main{
+            height: auto;
+            width: 50%;
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 50px 150px 150px 70px 50px;
+            grid-template-columns: 25% 50% 25%;
+            text-align: center;
+            margin: auto;
+        }
+        .h1{
+            text-align: center;
+        }
+        .main .item{
+            background: aquamarine;
+            border: 1px solid red;
+        }
+        .main .i-1{
+            background: navy;
+            grid-area: 1/ 1/ 2/ 4;
+        }
+        .main .i-3{
+            background: darkslategrey;
+            grid-area: 2/ 1/ 3/ 4;
+        }
+        .main .i-2{
+            background: red;
+            grid-area: 3/ 1/ 6/ 2;
+        }
+        .main .i-4{
+            background: blue;
+            grid-area: 3/ 2/ 4/ 4;
+        }
+        .main .i-5{
+            background: yellow;
+            grid-area: 4/ 2/ 4/ 4;
+        }
+        .main .i-6{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1">TABLET</h1>
+    <div class="main">
+        <div class="item i-1">HEADER</div>
+        <div class="item i-2">MENU</div>
+        <div class="item i-3">HERO</div>
+        <div class="item i-4">MAIN</div>
+        <div class="item i-5">BANNER</div>
+        <div class="item i-6">EXTRA</div>
+        <div class="item i-7">IMAGE</div>
+    </div>
+</body>
+</html>
