@@ -1,0 +1,57 @@
+.title {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 650px;
+    width: 90%;
+    margin: auto;
+    background-color: lightsteelblue;
+}
+
+.line {
+    height: 46%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.box {
+    border: 1px solid gray;
+    width: 30%;
+}
+
+.t-1 {
+    height: 55%;
+    width: 100%;
+    color: white;
+    background-color: rgb(27, 26, 26);
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 10;
+}
+
+.t-2 {
+    height: 45%;
+    width: 100%;
+    background-color: white;
+}
+
+.t-2 p {
+    font-size: 17px;
+}
+
+.t-2 span {
+    border: 1px solid;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+}

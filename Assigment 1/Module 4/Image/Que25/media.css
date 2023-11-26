@@ -1,0 +1,24 @@
+@media (max-width: 500px)
+{
+.main{
+width: auto;
+height: auto;
+font-family: 'Inter', sans-serif;
+}
+
+.navbar{
+    background-color: aqua;
+
+
+
+}
+.navbar .cen .m2 ,.m3,.m4,.m5,.rig .m6, button {
+    display:none;
+}
+.imenu{
+    
+    display:inline;
+
+}
+
+}
