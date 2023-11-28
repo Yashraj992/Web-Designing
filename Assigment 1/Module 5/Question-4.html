@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question4</title>
+</head>
+<body>
+    <h1>(4)Canvas and SVG tags</h1>
+    <h2>Ans:-</h2>
+
+    <h3>
+        1.SVG
+        <ul>
+            <li>The Scalable Vector Graphics is an XML based image format that is used to define two-dimensional vector-based graphics for the web.</li>
+            <li>SVG images can be created and edited with any text editor,such as notepad.</li>
+            <li>SVG has better scalability. So it can be printed with high quality at any resolution.</li>
+            <li>SVG can be modified through script and CSS.</li>
+            <li>SVG gives better performance with smaller number of objects or larger surface.</li>
+            <li>Example:-</li>
+        </ul>
+        <svg id="svgelem" height="200"> 
+            <circle id="greencircle" cx="60" cy="60" r="50" fill="green"> 
+        </svg><br>
+
+
+        2.Canvas
+        <ul>
+            <li>Used to draw graphics on the fly,via scripting(like JavaScript).</li>
+            <li>The element is only a container for graphics. You must use a script to actually draw the graphics.</li>
+            <li>Canvas has poor scalability. So it is not suitable for printing on higher resolution.</li>
+            <li>Canvas can be modified through script only.</li>
+            <li>Canvas gives better performance with smaller surface or larger number of objects.</li>
+            <li>Example:-</li>
+            <canvas id="Canvas" width="100" height="100" style="border:2px solid #000000;"></canvas>
+        </ul>
+    </h3>
+    <script> 
+        var c = document.getElementById('Canvas'); 
+        var ctx = c.getContext('2d'); 
+        ctx.fillStyle = '#8c0cca'; 
+        ctx.fillRect(0, 0, 100, 100); 
+    </script> 
+</body>
+</html>
