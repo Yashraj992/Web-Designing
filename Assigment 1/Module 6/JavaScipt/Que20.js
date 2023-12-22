@@ -1,19 +1,18 @@
-function enter(){
-    // console.log('in func');
-    let a =parseInt(document.getElementById('num1').value);
-    let b =parseInt(document.getElementById('num2').value);
-    let c =parseInt(document.getElementById('num3').value);
-    let d =parseInt(document.getElementById('num4').value);
-    let e =parseInt(document.getElementById('num5').value);
-    let f =parseInt(document.getElementById('num6').value);
-    let g =parseInt(document.getElementById('num7').value);
-    if(a<=50 && a>0 && b<=50 && b>0 && c<=50 && c>0 && d<=50 && d>0 && e<=50 && e>0 && f<=50 && f>0 && g<=50 && g>0){
-    let h = a + b + c + d + e + f + g;
-    document.getElementById('total').innerHTML= h;
-    let i = h/7 ;
-    document.getElementById('percentage').innerHTML=i;
+function enter() {
+    let a = parseInt(document.getElementById('one').value);
+    let b = parseInt(document.getElementById('two').value);
+    let c = parseInt(document.getElementById('three').value);
+    let d = parseInt(document.getElementById('four').value);
+    let e = parseInt(document.getElementById('five').value);
+    let f = parseInt(document.getElementById('six').value);
+    let g = parseInt(document.getElementById('seven').value);
+    if (a <= 50 && a > 0 && b <= 50 && b > 0 && c <= 50 && c > 0 && d <= 50 && d > 0 && e <= 50 && e > 0 && f <= 50 && f > 0 && g <= 50 && g > 0) {
+        let t = a + b + c + d + e + f;
+        document.getElementById('marks').innerHTML = t;
+        let i = t / 7;
+        document.getElementById('percentage').innerHTML = i;
     }
     else {
-    alert('enter marks between 0 to 50')
-     }
+        alert('enter marks only in digit and 0 to 50')
     }
+}
