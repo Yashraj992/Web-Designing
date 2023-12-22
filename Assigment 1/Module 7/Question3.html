@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style> 
+        div { 
+            width: 100px; 
+            height: 100px; 
+            background-color: red; 
+        } 
+        p{
+            font-size: 24px;
+        }
+        pre{
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Create slider with animation?</h1>
+    <h2>Ans:-</h2>
+
+    <p>&#10233 Syntax:-</p>
+    <pre>
+        &lt; script &gt;
+        $(".animate").click(function() {
+            $(selector).animate({
+                params(height/width)
+            },1000)
+        });
+        &lt; /script &gt;
+    </pre>
+    <div></div> 
+    <br><br>
+    <button class="animate">Click</button> 
+    <script>
+        $(".animate").click(function() { 
+            $("div").animate({ 
+                height: "200px", 
+                width: "200px", 
+            }, 1000) 
+        }); 
+    </script> 
+</body>
+</html>
