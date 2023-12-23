@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <form action="" class="form">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" class="inputField" placeholder="Enter your first name" required><br>
+    
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" class="inputField" placeholder="Enter your last name" required><br>
+    
+            <label for="Email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" id="Email" class="inputField" placeholder="Enter your email id" required><br>
+
+            <label for="mobile">Mobile:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="mobile" class="inputField" placeholder="Enter your mobile number" required><br>
+    
+            <label for="gender">Gender:</label>
+                <span>
+                    Male<input type="radio" id="gender" class="">
+                    Female<input type="radio" id="gender" class="">
+                </span><br>
+
+            <label for="date">Date Of Birth:</label>
+            <input type="date" id="date" class="inputField" required><br>
+    
+            <label for="adress">Adress:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="adress" class="inputField" required><br>
+    
+            <label for="city">City:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="city" class="inputField" required><br>
+    
+            <label for="area">AreaPIN:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="area" class="inputField" required><br>
+    
+            <label for="state">State:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="state" class="inputField" required><br>
+    
+            <label for="qua">Qualification:</label>
+            <select name="std" id="qua">
+                <option value="1st">10th Pass</option>
+                <option value="2nd">12th Pass</option>
+                <option value="3rd">Graduate</option>
+            </select><br>   
+    
+            <label for="spe">Specialization:</label>
+            <span class="span">
+            <input type="checkbox" id="spe" class="">Computer Science <br>
+            <input type="checkbox" id="spe" class="">Information Technology <br>
+            <input type="checkbox" id="spe" class="">Computer Architecture <br>
+            <input type="checkbox" id="spe" class="">Tele Comunications <br>
+        </span>
+        <!-- <div class="spe">
+            <input type="checkbox" id="spe" class="">Computer Science <br>
+            <input type="checkbox" id="spe" class="">Information Technology <br>
+            <input type="checkbox" id="spe" class="">Computer Architecture <br>
+            <input type="checkbox" id="spe" class="">Tele Comunications <br>
+        </div> -->
+    
+            <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;
+            <input type="password" id="password" class="inputField" required><br>
+    
+            <button type="button" onclick="validateForm()">Registered</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

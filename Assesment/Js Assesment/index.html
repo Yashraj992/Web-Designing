@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="div">
+      <div class="bookingtext">
+        <h1>Restaurant Booking Form</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, doloremque corporis at explicabo facilis
+          veritatis aut praesentium vero quam. Optio unde fugit in ipsam ipsum enim dolorum corrupti deleniti nulla!</p>
+      </div>
+
+      <div class="form">
+        <form id="bookingForm">
+          <label for="bookingType">Choice of Booking:</label>
+          <select id="bookingType" onchange="updateForm()">
+            <option value="fullday">Full Day Booking</option>
+            <option value="halfday">Half Day Booking</option>
+            <option value="hourly">Hourly Booking</option>
+          </select>
+          <div id="slotSection" style="display: none;">
+            <label for="slot">Slot:</label>
+            <select id="slot">
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="dinner">Dinner</option>
+            </select>
+          </div>
+          <br><br>
+          <label for="username">User Name:</label>
+          <input type="text" id="username" required>
+          <br><br>
+
+          <label for="mobile">Mobile Number:</label>
+          <input type="tel" id="mobile" required>
+          <br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <br><br>
+
+          <label for="numOfPersons">Number of Persons:</label>
+          <input type="number" id="numOfPersons" required>
+          <br><br>
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" required>
+          <br><br>
+
+          <label for="time">Time:</label>
+          <input type="time" id="time">
+          <br><br>
+
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="my.js"></script>
+</body>
+
+</html>
