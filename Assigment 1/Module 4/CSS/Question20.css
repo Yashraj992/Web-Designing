@@ -1,6 +1,6 @@
 .main {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background: black;
     border: 1px solid black;
     display: grid;
@@ -87,6 +87,7 @@
 .i-11 {
     grid-area: 1/ 7/ 5/ 8;
     background-color: black;
+    margin-right: 20px;
 }
 
 .i-11 .h1 {
