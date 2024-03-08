@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question 3</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <style>
         div {
-            border: 3px solid rebeccapurple;
-            font-size: 26px;
+            background-color: black;
             height: 100px;
-            width: 80%;
-            padding: 50px;
-            margin: 0 50px;
+            width: 500px;
         }
         p {
             font-size: 24px;
@@ -40,25 +38,24 @@
         &lt; script &gt;
         $(document).ready(function(){
             $(class-name).click(function(){
-                $(class-name).slideToggle(animation);
+                $(class-name).animate({
+                    height: "50px"
+                },speed);
             });
         });
         &lt; /script &gt;
     </pre>
-    <div class="slider">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia fugiat debitis similique corporis
-        labore expedita, ad quae voluptatum ullam harum, dolores voluptates facere iusto est libero provident quis
-        praesentium ex dolorem cum quos quia deserunt! Dolorum aperiam necessitatibus hic officiis harum! Pariatur ipsam
-        ipsa sed odio, nisi repellat neque.
-    </div>
+    <div class="slider"></div>
     <br><br>
-    <button class="button">Slide</button>
+    <button class="button">animate</button>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.button').click(function () {
-                $('.slider').slideToggle('slow');
+                $('.slider').animate({
+                    width: '+=50px'
+                }, 2000)
             });
         });
     </script>
