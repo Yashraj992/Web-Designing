@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+    <link rel="stylesheet" href="css/Que16.css">
+</head>
+<body>
+    <h1>How can a page be forced to load another page in JavaScript?</h1>
+    <h2>Ans:-</h2>
+
+    <div>
+        <p>We can use window.location property inside the script tag to forcefully load another page in Javascript.</p>
+        <p>It is a reference to a Location object that is it represents the current location of the document.</p>
+        <p>We can change the URL of a window by accessing it.</p>
+        <p>Syntax:-</p>
+        <pre>
+            &lt; script &gt;
+                window.location = &lt;Path&gt;
+            &lt; /script &gt;
+        </pre>
+        <button onclick="force()"> Click me </button> 
+    </div>
+
+    <script>
+        function force() { 
+            window.location = "https://twitter.com/" 
+        }
+    </script>
+</body>
+</html>

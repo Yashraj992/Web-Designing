@@ -1,0 +1,49 @@
+.main{
+    height: 600px;
+    width: 99vw;
+    background-color: #000;
+}
+.main h1, h3{
+    text-align: center;
+    color: #fff;
+}
+.slider{
+    margin: 80px 0 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.s1{
+    height: 200px;
+    width: 220px;
+    background-color: aquamarine;
+}
+.s2{
+     height: 200px;
+    width: 220px;
+    background-color: yellow;
+}
+.s3{
+     height: 200px;
+    width: 220px;
+    background-color: blueviolet;
+}
+.s4{
+     height: 200px;
+    width: 220px;
+    background-color: brown;
+}
+.s5{
+     height: 200px;
+    width: 220px;
+    background-color: green;
+}
+.s6{
+     height: 200px;
+    width: 220px;
+    background-color: white;
+}
+.icon{
+    color: gray;
+    text-align: center;
+    margin: 50px 30px 0 0;
+}

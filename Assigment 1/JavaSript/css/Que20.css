@@ -1,0 +1,51 @@
+.main {
+    border: 2px solid;
+    margin: auto;
+    height: 650px;
+    width: 50%;
+    text-align: center;
+}
+
+.inp {
+    font-size: 26px;
+    margin-left: 40px;
+    line-height: 45px;
+    text-align: left;
+}
+
+.inp input {
+    position: absolute;
+    left: 800px;
+    font-size: 24px;
+}
+
+#result {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.589);
+    left: 800px;
+}
+
+.main button {
+    font-size: 24px;
+    padding: 10px 50px;
+}
+
+.last {
+    position: absolute;
+    display: flex;
+    left: 400px;
+    top: 700px;
+    gap: 150px;
+}
+
+.marks {
+    font-size: 25px;
+}
+
+.percentage {
+    font-size: 25px;
+}
+
+span {
+    color: blue;
+}
