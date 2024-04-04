@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        div {
+            background-color: black;
+            height: 100px;
+            width: 150px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        pre {
+            font-size: 16px;
+        }
+
+        button {
+            font-size: 22px;
+            background-color: rgba(0, 0, 255, 0.671);
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>How to Create slider with animation?</h1>
+    <h2>Ans:-</h2>
+
+    <p>&#10233 Syntax:-</p>
+    <pre>
+        &lt; script &gt;
+        $(document).ready(function(){
+            $(class-name).click(function(){
+                $(class-name).animate({
+                    height: "50px"
+                },speed);
+            });
+        });
+        &lt; /script &gt;
+    </pre>
+    <div class="slider"></div>
+    <br><br>
+    <button class="button">animate</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".button").click(function () {
+                $(".slider").animate({
+                    left: '250px',
+                    height: '+=150px',
+                    width: '+=150px'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
