@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Interval</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cdn/bootstrap.min.css">
+    <link rel="stylesheet" href="cdn/bootstrap-datetimepicker.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Date Interval</h1>
+        </div>
+        <div class="box col-md-10">
+            <div class="row">
+                <div class='col-sm-10'>
+                    <div class="form-group">
+                        <label class="col-md-2">From:</label>
+                        <div class='input-group date col-md-10' id='from'>
+                            <input type='text' class="form-control" id="d1" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class='col-sm-10'>
+                    <div class="form-group">
+                        <label class="col-md-2">To:</label>
+                        <div class='input-group date col-md-10' id='to'>
+                            <input type='text' class="form-control" id="d2" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class='col-sm-10  pull-right'>
+                    <div class="form-group">
+                        <input type='submit' id="calculate" value="Calculate" class="btn btn-primary " />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class='col-sm-12'>
+                    <div id="output" class="form-group">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="cdn/jquery.min.js"></script>
+    <script src="cdn/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            var dateInterval = {
+                days: function (d1, d2) {
+                    var t1 = d1.getTime();
+                    var t2 = d2.getTime();
+                    return parseInt((t2 - t1) / (24 * 3600 * 1000));
+                },
+
+                weeks: function (d1, d2) {
+                    var t1 = d1.getTime();
+                    var t2 = d2.getTime();
+                    return parseInt((t2 - t1) / (24 * 3600 * 1000 * 7));
+                },
+
+                months: function (d1, d2) {
+                    var M1 = d1.getMonth();
+                    var M2 = d2.getMonth();
+                    var Y1 = d1.getFullYear();
+                    var Y2 = d2.getFullYear();
+                    return (M2 + 12 * Y2) - (M1 + 12 * Y1);
+                },
+
+                years: function (d1, d2) {
+                    return d2.getFullYear() - d1.getFullYear();
+                }
+
+            }
+
+            $("#calculate").click(function () {
+
+                $("#output").hide();
+                $("#output").fadeIn(900, 0);
+                $("#output").html(function () {
+
+                    var from = document.getElementById("d1").value;
+                    var to = document.getElementById("d2").value;
+                    var output;
+
+                    var d1 = new Date(from);
+                    var d2 = new Date(to);
+
+                    if (to == '' || from == '') {
+                        output = 'Please enter the dates!';
+
+                    } else {
+                        output = 'Date interval between ' + from + ' and ' + to +
+                            '<hr/> In years  :' + dateInterval.years(d1, d2) +
+                            '<br/> In months :' + dateInterval.months(d1, d2) +
+                            '<br/> In weeks  :' + dateInterval.weeks(d1, d2) +
+                            '<br/> In days   :' + dateInterval.days(d1, d2) +
+                            '<hr/>';
+                    }
+                    return output;
+                });
+            })
+        })
+
+        $(function () {
+            $('#from').datetimepicker({
+                format: 'mm/dd/yyyy',
+                todayBtn: 1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 2,
+                minView: 2,
+            });
+        });
+
+        $(function () {
+            $('#to').datetimepicker({
+                format: 'mm/dd/yyyy',
+                todayBtn: 1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 2,
+                minView: 2,
+            });
+        });
+
+    </script>
+</body>
+
+</html>

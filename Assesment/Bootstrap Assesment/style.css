@@ -1,0 +1,21 @@
+.container {
+    width: 30%;
+    padding: 10px;
+}
+
+.container .row {
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
+.container #output {
+    display: none;
+    background: #428bca;
+    color: #fff;
+    padding: 2px 0 0 2px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.099);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.099);
+}
