@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que 11</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="container mt-5">Find circumference of Rectangle formula : C = 4 * a ?</h1>
+
+    <div class="container fs-4 mt-5">
+        <p id="para"></p>
+    </div>
+
+    <script>
+        function calculateCircumference(a) {
+            return 4 * a;
+        }
+
+        let length = 5;
+        let width = 3;
+        let a = (length + width) / 2;
+        let circumference = calculateCircumference(a);
+        document.getElementById("para").innerHTML="The circumference of rectangle formula C = 4 * a is: " + circumference;
+
+    </script>
+</body>
+
+</html>

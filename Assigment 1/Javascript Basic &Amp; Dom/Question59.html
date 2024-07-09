@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que 59</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="container mt-5">What is Bom vs Dom in JS?</h1>
+
+    <div class="container fs-4 mt-5">
+        <h4>BOM(Browser object model)</h4>
+        <li>The BOM provides interaction with the browser.</li>
+        <li>Scope:</li>
+        <li>It includes objects like window, navigator, screen, history, location, and more, which represent the browser
+            and the environment in which the web page is running.</li>
+        <li>Usage:</li>
+        <li>BOM allows developers to control the browser window and communicate with the browser.</li>
+        <li>It includes methods for manipulating the browser window, such as opening new windows, moving and resizing
+            windows, and getting information about the browser itself.</li>
+        <li>Examples:</li>
+        <li>window.alert("Hello World!"); - Shows an alert dialog.</li>
+        <li>location.href - Gets or sets the URL of the current window.</li>
+        <br>
+
+        <h4>DOM(Document object model)</h4>
+        <li>The DOM is a programming interface for web documents.</li>
+        <li>Scope:</li>
+        <li>It represents the structure of a document (like an HTML or XML document) as a tree of nodes, where each node
+            represents part of the document.</li>
+        <li>Usage:</li>
+        <li>DOM allows developers to manipulate the content, structure, and style of a web document.</li>
+        <li>It provides methods to traverse the document, add or remove elements, and change the content or style of
+            elements.</li>
+        <li>Examples:</li>    
+        <li>document.getElementById("myElement").innerHTML = "Hello World!"; - Changes the content of an element.</li>
+        <li>document.createElement("div"); - Creates a new div element.</li>
+        <li>document.querySelector(".myClass").style.color = "red"; - Changes the color of elements with the class myClass.</li><br>
+
+        <h4>Difference:</h4>
+        <li>Purpose: BOM is concerned with the browser environment, whereas DOM is concerned with the content of the web page.</li>
+        <li>Objects: BOM includes objects like window and navigator, while DOM includes objects that represent document elements like document, element, and node.</li>
+    </div>
+</body>
+
+</html>

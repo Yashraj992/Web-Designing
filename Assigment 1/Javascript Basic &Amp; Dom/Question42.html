@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que 42</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="container mt-5">Write a JavaScript program to compare two objects?</h1>
+
+    <div class="container fs-4 mt-5">Answer in console.</div>
+
+    <script>
+        function object(obj1, obj2) {
+            if (typeof obj1 !== 'object' || typeof obj2 !== 'object') {
+                return false;
+            }
+
+            const keys1 = Object.keys(obj1);
+            const keys2 = Object.keys(obj2);
+
+            if (keys1.length !== keys2.length) {
+                return false;
+            }
+
+            for (let key of keys1) {
+                if (!obj2.hasOwnProperty(key) || obj1[key] !== obj2[key]) {
+                    return false;
+                }
+            }
+
+            for (let key of keys2) {
+                if (!obj1.hasOwnProperty(key) || obj2[key] !== obj1[key]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        const obj1 = { a: 1, b: 2, c: 3 };
+        const obj2 = { a: 1, b: 2, c: 3 };
+        const obj3 = { a: 1, b: 2, c: 4 };
+
+        console.log(object(obj1, obj2));
+        console.log(object(obj1, obj3));
+
+    </script>
+</body>
+
+</html>

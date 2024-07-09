@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que 40</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="container mt-5">Write a JavaScript Program to display the current day and time in the following format.
+        Sample Output: Today is Friday. Current Time is 12 PM: 12 : 22 2 ?</h1>
+    <br>
+
+    <script>
+        function print() {
+            const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const now = new Date();
+            const dayOfWeek = now.getDay();
+            const dayName = days[dayOfWeek];
+
+            let hour = now.getHours();
+            const period = hour >= 12 ? 'PM' : 'AM';
+            hour = hour % 12;
+            hour = hour ? hour : 12;
+
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const currentTime = `Current Time is ${hour} ${period}: ${minutes} : ${seconds}`;
+
+            document.write(`Today is ${dayName}. ${currentTime}`);
+        }
+
+        print();
+    </script>
+</body>
+
+</html>

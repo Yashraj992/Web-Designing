@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que 51</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="container mt-5">Write a JavaScript program to get the current date. Expected Output : mm-dd-yyyy,
+        mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy?</h1>
+
+    <div class="container fs-4 mt-5">Answer in console.</div>
+
+    <script>
+        function getCurrentDate() {
+            const today = new Date();
+
+            const day = String(today.getDate()).padStart(2, '0');
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const year = today.getFullYear();
+
+            const format1 = `${month}-${day}-${year}`;
+            const format2 = `${month}/${day}/${year}`;
+            const format3 = `${day}-${month}-${year}`;
+            const format4 = `${day}/${month}/${year}`;
+
+            return {
+                'mm-dd-yyyy': format1,
+                'mm/dd/yyyy': format2,
+                'dd-mm-yyyy': format3,
+                'dd/mm/yyyy': format4
+            };
+        }
+
+        const formattedDates = getCurrentDate();
+
+        console.log('mm-dd-yyyy:', formattedDates['mm-dd-yyyy']);
+        console.log('mm/dd/yyyy:', formattedDates['mm/dd/yyyy']);
+        console.log('dd-mm-yyyy:', formattedDates['dd-mm-yyyy']);
+        console.log('dd/mm/yyyy:', formattedDates['dd/mm/yyyy']);
+    </script>
+</body>
+
+</html>

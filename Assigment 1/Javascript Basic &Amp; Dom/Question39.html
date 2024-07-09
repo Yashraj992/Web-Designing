@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que 39</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="container mt-5">Accept 3 numbers from user using while loop and check each numbers palindrome?</h1>
+
+    <div class="container fs-4 mt-5">Answer in console.</div>
+
+    <script>
+        function isPalindrome(num) {
+            const original = num;
+            let reversed = 0;
+            while (num > 0) {
+                reversed = reversed * 10 + num % 10;
+                num = Math.floor(num / 10);
+            }
+            return original === reversed;
+        }
+
+        const num1 = parseInt(prompt("Enter the first number:"));
+        const num2 = parseInt(prompt("Enter the second number:"));
+        const num3 = parseInt(prompt("Enter the third number:"));
+
+        console.log(isPalindrome(num1));
+        console.log(isPalindrome(num2));
+        console.log(isPalindrome(num3));
+    </script>
+</body>
+
+</html>
