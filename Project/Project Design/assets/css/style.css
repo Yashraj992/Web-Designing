@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-decoration: none;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+.header {
+    padding: 20px;
+}
+
+.header-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-1 .logo {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+
+.header-1 .logo img {
+    margin-top: 5px;
+}
+
+.header-1 form input {
+    padding: 7px 50px;
+    font-size: 18px;
+}
+
+.header-1 span img {
+    position: absolute;
+    margin: 7px 0 0 -30px;
+}
+
+.header-1 .icons a img {
+    padding-bottom: 10px;
+}
+
+.header-1 .icons a img:hover {
+    border-bottom: 2px solid #118C5C;
+}
+
+/* NAVBAR */
+.nav {
+    padding: 20px;
+    background-color: #118C5C;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    margin: 0 30px;
+    color: #fff;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: black;
+    transition: 1s ease all;
+}
+
+/* SECTION1 */
+.section1 {
+    display: flex;
+    height: 62vh;
+    background-color: #E7EAE7;
+    padding: 20px;
+}
+
+.sec1-details {
+    margin: 50px 100px;
+}
+
+.sec1-details button {
+    color: #fff;
+    background-color: #118C5C;
+    font-weight: 400;
+    padding: 7px 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+.sec1-details button:hover {
+    background-color: #000;
+    transition: 2s ease all;
+}
+
+.sec1-book {
+    margin-top: 50px;
+}
+
+.sec1-book .book-image {
+    display: flex;
+    width: 500px;
+    margin-left: 35px;
+}
+
+.stand-image img {
+    mix-blend-mode: multiply;
+    margin-top: -10px;
+}
+
+/* SECTION2 */
+.section2 {
+    display: flex;
+    padding: 40px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.sec2 {
+    display: flex;
+    margin: 0 20px;
+}
+
+.sec2 h2 {
+    font-weight: 400;
+}
+
+.sec2 .icon img {
+    width: 40px;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+/* SECTION3 */
+.section3 {
+    height: 99vh;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.book-cart {
+    display: flex;
+    padding: 40px;
+}
+
+.book {
+    height: 480px;
+    width: 300px;
+    box-shadow: 2px 3px 15px 2px;
+    margin: 0 30px;
+    background-color: #E7EAE7;
+}
+
+.book h3 {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.book p {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.book button {
+    margin-top: 15px;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #118C5C;
+    color: #fff;
+    font-weight: 500;
+    display: none;
+}
+
+.book:hover .btn {
+    display: inline-block;
+}
+
+.book:hover {
+    border: 5px solid #E7EAE7;
+    transition: 1s ease all;
+}
+
+.book img {
+    margin-top: 20px;
+    height: 300px;
+    width: 250px;
+}
+
+/* SECTION4 */
+.section4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/image/bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 140px;
+    text-align: right;
+    color: #fff;
+}
+
+.section4 input {
+    width: 400px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.section4 button {
+    padding: 10px 30px;
+    background-color: #118C5C;
+    color: #fff;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.section4 button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 2s ease all;
+}
+
+/* SECTION5 */
+.section5 {
+    height: 99vh;
+    padding: 40px;
+}
+
+.sec5 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.new-book {
+    display: flex;
+    border: 2px solid #E7EAE7;
+    padding: 10px 20px;
+}
+
+.section5 .img {
+    height: 250px;
+    width: 200px;
+}
+
+.section5 .price {
+    margin-left: 20px;
+}
+
+.section5 .price h3 {
+    width: 120px;
+    font-weight: 400;
+}
+
+/* SECTION6 */
+.section6 {
+    height: 69vh;
+    background-color: #E7EAE7;
+    padding: 100px;
+    display: flex;
+}
+
+.section6 h2 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #118C5C;
+    margin-top: 30px;
+}
+
+.section6 h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.section6 button {
+    margin-top: 20px;
+    padding: 8px 30px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #118C5C;
+    border: none;
+    border-radius: 10px;
+}
+
+.section6 button:hover {
+    background-color: #118c5de1;
+    color: #000;
+    transition: 2s ease all;
+}
+
+.sec6-image {
+    margin-left: 100px;
+    margin-top: -40px;
+    display: flex;
+    width: 500px;
+    height: 350px;
+}
+
+.sec6-img1 {
+    margin-top: 40px;
+    margin-left: 40px;
+    height: 260px;
+    width: 200px;
+    transform: rotate(30deg);
+}
+
+.sec6-img2 {
+    margin-top: 40px;
+    margin-left: 15px;
+    height: 260px;
+    width: 200px;
+    transform: rotate(-30deg);
+}
+
+/* SECTION7 */
+.section7 {
+    height: 80vh;
+    padding: 40px;
+}
+
+.sec7 {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.box {
+    padding: 40px;
+    border: 2px solid #E7EAE7;
+}
+
+.sec7 .box h2 {
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.sec7 .box p {
+    margin-top: 10px;
+}
+
+.sec7-img1 {
+    background-image: url(../image/user1.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    height: 90px;
+    width: 100px;
+}
+
+.sec7-img2 {
+    background-image: url(../image/user2.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    height: 90px;
+    width: 100px;
+}
+
+.sec7-img3 {
+    background-image: url(../image/user3.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    height: 90px;
+    width: 100px;
+}
+
+/* SECTION8 */
+.section8 {
+    height: 99vh;
+    padding: 60px;
+}
+
+.blogs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-contant {
+    height: 500px;
+    width: 450px;
+    border: 2px solid #E7EAE7;
+    margin-top: 50px;
+}
+
+.blogs img {
+    height: 250px;
+    width: 100%;
+}
+
+.blog-contant h2,
+p,
+button {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.blog-contant button {
+    padding: 8px 30px;
+    background-color: #118C5C;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+}
+.blog-contant button:hover{
+    background-color: black;
+    transition: 1s ease all;
+}
+
+/* FOOTER */
+footer {
+    height: 95vh;
+    background-size: cover;
+    padding: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer h2 {
+    font-weight: 400;
+}
+
+.footer p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+.footer p:hover{
+    margin-left: 2px;
+    transition: 0.5s ease all;
+}
+.social {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    column-gap: 50px;
+}
+.right{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.right span{
+    color: #118C5C;
+    font-weight: 500;
+}
